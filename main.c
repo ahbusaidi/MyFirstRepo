@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/* Nice code ^_^ */
 void removechars(){
 	FILE *f, *g;
 	char c;
