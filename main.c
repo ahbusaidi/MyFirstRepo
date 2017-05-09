@@ -9,7 +9,7 @@ void counthex(char* filename){
 	unsigned int i;
 	size_t s;
 
-	for(i=0;i<=256;i++) counter[i]=0;
+	for(i=0;i<256;i++) counter[i]=0;
 
 	f = fopen(filename,"rb");
 
@@ -33,7 +33,7 @@ void counthex(char* filename){
 	}
 
 	g = fopen("result.txt","w");
-	for(i=0;i<=256;i++)fprintf(g,"0x%.2x; %lu\n",i,counter[i]);
+	for(i=0;i<256;i++)fprintf(g,"0x%.2x; %lu\n",i,counter[i]);
 
 	free(hex);
 	fclose(f);
