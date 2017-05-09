@@ -20,3 +20,9 @@ void removechars(){
 	fclose(f);
 	fclose(g);	
 }
+
+int main(){
+	printf("Welcome to file system ^_^...\n");
+	removechars();
+	return 0;
+}
