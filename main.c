@@ -23,6 +23,7 @@ void removechars(){
 }
 
 int main(){
+	/* May BE ^_^*/
 	printf("Welcome to file system ^_^...\n");
 	removechars();
 	return 0;
