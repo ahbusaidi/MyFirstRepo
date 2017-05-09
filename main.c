@@ -13,6 +13,11 @@ void counthex(char* filename){
 
 	f = fopen(filename,"rb");
 
+	if(f == NULL) {
+		printf("please specify correct file!\n");
+		exit(0);
+	}
+
 	fseek(f,0,SEEK_END);
 
 	s = ftell(f);
